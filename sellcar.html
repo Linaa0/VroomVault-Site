@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car - VroomVault</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sellcar.css">
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Vroom<span>Vault</span></h1>
+        <section class="links" aria-label="links section">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Connect</a>
+            <a href="sellcar.html">Sell-Here</a>
+        </section>
+        <div class="srch">
+            <input type="search" id="search" placeholder="Car in your mind...">
+            <button id="srchbtn" class="srchbtn">Search</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Sell Your Car with <span>Confidence</span></h1>
+        <p>Get the best value for your vehicle in just 3 simple steps. Fast, secure, and transparent.</p>
+    </section>
+
+    <section class="content-grid">
+        <div class="card">
+            <div class="step-number">1</div>
+            <h3>Fill Details</h3>
+            <p>Provide basic information about your car including make, model, year, and condition.</p>
+        </div>
+        <div class="card">
+            <div class="step-number">2</div>
+            <h3>Upload Photos</h3>
+            <p>Add high-quality images of your car from multiple angles to attract buyers.</p>
+        </div>
+        <div class="card">
+            <div class="step-number">3</div>
+            <h3>Get Offers</h3>
+            <p>Receive competitive offers from verified buyers within 24 hours.</p>
+        </div>
+        <div class="card">
+            <div class="step-number">4</div>
+            <h3>Close Deal</h3>
+            <p>Accept the best offer and complete the secure transaction with our support.</p>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <h2>List Your <span>Vehicle</span></h2>
+
+        <form class="sell-car-form">
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Your Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="yourname@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+012 456 893 004" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="City, State" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Vehicle Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="make">Make</label>
+                        <select id="make" required>
+                            <option value="">Select Make</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="ford">Ford</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="audi">Audi</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" placeholder="e.g., BMW" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" id="year" placeholder="2020" min="1990" max="2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mileage">Mileage (km)</label>
+                        <input type="number" id="mileage" placeholder="50,000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition</label>
+                        <select id="condition" required>
+                            <option value="">Select Condition</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="fair">Fair</option>
+                            <option value="poor">Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transmission">Transmission</label>
+                        <select id="transmission" required>
+                            <option value="">Select Type</option>
+                            <option value="automatic">Automatic</option>
+                            <option value="manual">Manual</option>
+                            <option value="cvt">CVT</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuel">Fuel Type</label>
+                        <select id="fuel" required>
+                            <option value="">Select Type</option>
+                            <option value="petrol">Petrol</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="electric">Electric</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color</label>
+                        <input type="text" id="color" placeholder="e.g., Black" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="asking-price">Asking Price (USD)</label>
+                        <input type="number" id="asking-price" placeholder="25,000" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Additional Details</h3>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="4" placeholder="Tell us about your car's features, service history, modifications, etc."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photos">Upload Photos</label>
+                    <input type="file" id="photos" accept="image/*" multiple>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit Listing</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="content-grid">
+        <div class="card">
+            <h3>Secure Transactions</h3>
+            <p>All payments are processed securely through encrypted channels with buyer protection.</p>
+        </div>
+        <div class="card">
+            <h3>Best Market Value</h3>
+            <p>Our AI-powered pricing ensures you get competitive offers based on real market data.</p>
+        </div>
+        <div class="card">
+            <h3>24/7 Support</h3>
+            <p>Our dedicated team is always available to assist you throughout the selling process.</p>
+        </div>
+        <div class="card">
+            <h3>Quick Listing</h3>
+            <p>Your car goes live within hours, reaching thousands of potential buyers instantly.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="contact-icons">
+        <p><i class="fas fa-phone"></i> +012 456 893 004</p>
+        <p><i class="fas fa-envelope"></i> info@vroomvault.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/reel/C4yWW5qIRrR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&epik=dj0yJnU9VXpmUzhPZWtYSTJLaWtMam5XZlFMNUI0R0lwNXFrYWQmcD0wJm49dldNTEw1aUotcF9Qc0J2R21laEZ5USZ0PUFBQUFBR2xsM2pN" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</footer>
+</body>
+</html>
