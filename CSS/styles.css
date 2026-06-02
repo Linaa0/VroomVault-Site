@@ -87,9 +87,10 @@ header{
 nav{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    flex-direction: row;
     gap: 40px;
 }
+
+    
 
 section {
     display: grid;
@@ -115,6 +116,8 @@ section a:hover{
     align-items: center;
     justify-content: center;
 }
+
+
 #search{
     width: 300px;
     height: 40px;
@@ -164,6 +167,7 @@ p{
     max-width: 1200px;
     margin: 20px auto;
 }
+
 article.featured {
     font-size: 16px;
     margin-top: 60px;
@@ -452,4 +456,441 @@ footer .social-icons a{
 footer .social-icons a:hover{
     color: #00C853 !important;
     font-weight: unset !important;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS — VROOMVAULT
+   ============================================ */
+
+/* ── Large tablets / small laptops (max 1200px) ── */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    gap: 30px;
+  }
+
+  article.featured {
+    grid-column: span 2;
+  }
+
+  .unique {
+    max-width: 90%;
+    gap: 24px;
+  }
+}
+
+/* ── Tablets (max 1036px) ── */
+@media (max-width: 1036px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    gap: 24px;
+  }
+
+  article.featured {
+    grid-column: span 2;
+  }
+
+  .featured-img {
+    height: 280px;
+  }
+
+  .featured-text {
+    padding: 24px 28px;
+  }
+
+  .featured-text h2 {
+    font-size: 22px;
+  }
+
+  .unique {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+
+  footer .contact-icons {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+
+/* ── Small tablets / large phones (max 800px) ── */
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 20px;
+    margin: 16px auto;
+  }
+
+  article.featured {
+    grid-column: span 1;
+    margin-top: 20px;
+  }
+
+  .featured-img {
+    height: 220px;
+  }
+
+  .featured-text {
+    padding: 20px 20px;
+  }
+
+  .featured-text h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .featured-tagline {
+    font-size: 15px;
+  }
+
+  .featured-body {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .unfeatured {
+    height: auto;
+    padding-top: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border: 1px solid rgba(0, 200, 83, 0.3);
+    border-radius: 8px;
+    background-color: #1a1a1a;
+  }
+
+  .unfeatured img {
+    width: 120px;
+    height: 90px;
+    flex-shrink: 0;
+  }
+
+  .unfeatured div h3 {
+    font-size: 15px;
+    margin: 0 0 6px;
+    color: lightgray;
+  }
+
+  .unfeatured div p {
+    font-size: 13px;
+    color: silver;
+    margin: 0;
+  }
+
+  .unique {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 20px;
+    margin: 24px auto;
+  }
+
+  .unique1, .unique2 {
+    font-size: 15px;
+  }
+
+  footer .contact-icons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  footer .social-icons {
+    gap: 20px;
+    padding: 16px;
+  }
+
+  footer .social-icons a {
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+/* ── Mobile phones (max 480px) ── */
+@media (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  section a {
+    font-size: 14px;
+  }
+
+  #search {
+    width: 200px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .srchbtn {
+    width: 80px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  span {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-left: 6px;
+  }
+
+  .featured-img {
+    height: 180px;
+  }
+
+  .featured-text {
+    padding: 16px;
+  }
+
+  .featured-text h2 {
+    font-size: 17px;
+  }
+
+  .featured-tagline {
+    font-size: 13px;
+  }
+
+  .featured-body {
+    font-size: 13px;
+  }
+
+  .unfeatured {
+    flex-direction: column;
+  }
+
+  .unfeatured img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .splash-content h1 {
+    font-size: 32px;
+  }
+
+  .splash-content span {
+    font-size: 32px;
+  }
+
+  .splash-content p {
+    font-size: 16px;
+  }
+
+  .unique1, .unique2 {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  footer .contact-icons p {
+    font-size: 13px;
+  }
+
+  footer .social-icons a {
+    font-size: 18px;
+  }
+}
+
+/* ── Very small phones (max 360px) ── */
+@media (max-width: 360px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+  }
+
+  section a {
+    font-size: 12px;
+  }
+
+  #search {
+    width: 160px;
+  }
+
+  .srchbtn {
+    width: 70px;
+  }
+}
+
+/* ============================================
+   NAVBAR RESPONSIVE — VROOMVAULT
+   ============================================ */
+
+/* ── Base nav additions ── */
+nav h1 {
+  font-size: 28px;
+  padding: 12px 10px;
+  white-space: nowrap;
+}
+
+/* ── Large tablets (max 1036px) ── */
+@media (max-width: 1036px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    padding-bottom: 10px;
+  }
+
+  nav h1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 16px;
+  }
+
+  .links {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-top: 1px solid rgba(0, 200, 83, 0.15);
+  }
+
+  .srch {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin-bottom: 0;
+    padding-right: 16px;
+  }
+
+  #search {
+    width: 200px;
+  }
+}
+
+/* ── Small tablets / large phones (max 800px) ── */
+@media (max-width: 800px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0;
+  }
+
+  nav h1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    padding: 14px 10px 8px;
+    font-size: 26px;
+  }
+
+  .links {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 12px;
+    border-top: 1px solid rgba(0, 200, 83, 0.15);
+    border-bottom: 1px solid rgba(0, 200, 83, 0.15);
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  .srch {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    padding: 10px 16px 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #search {
+    flex: 1;
+    width: auto;
+    max-width: 280px;
+    height: 38px;
+  }
+
+  .srchbtn {
+    height: 38px;
+    width: 90px;
+    font-size: 14px;
+  }
+}
+
+/* ── Mobile phones (max 480px) ── */
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 22px;
+    padding: 12px 10px 6px;
+  }
+
+  span {
+    font-size: 22px;
+  }
+
+  .links {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 0;
+    padding: 6px 10px;
+  }
+
+  .links a {
+    font-size: 13px;
+    padding: 8px 4px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 200, 83, 0.08);
+  }
+
+  .links a:nth-child(1),
+  .links a:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 200, 83, 0.1);
+  }
+
+  .links a:nth-child(3),
+  .links a:nth-child(4) {
+    border-bottom: none;
+  }
+
+  #search {
+    max-width: 220px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .srchbtn {
+    width: 78px;
+    height: 36px;
+    font-size: 13px;
+  }
+}
+
+/* ── Very small phones (max 360px) ── */
+@media (max-width: 360px) {
+  nav h1 {
+    font-size: 20px;
+  }
+
+  .links a {
+    font-size: 12px;
+  }
+
+  #search {
+    max-width: 170px;
+    font-size: 12px;
+  }
+
+  .srchbtn {
+    width: 68px;
+    font-size: 12px;
+  }
 }
