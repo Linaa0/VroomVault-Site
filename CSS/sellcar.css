@@ -474,3 +474,409 @@ main {
         font-size: 24px;
     }
 }
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS — VROOMVAULT SELL CAR PAGE
+   ============================================ */
+
+/* ── Large tablets (max 1200px) ── */
+@media (max-width: 1200px) {
+  nav {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-container {
+    margin: 0 auto 40px;
+  }
+}
+
+/* ── Tablets (max 1036px) ── */
+@media (max-width: 1036px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    padding-bottom: 10px;
+  }
+
+  nav h1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 16px;
+    margin: 0;
+  }
+
+  section.links {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-top: 1px solid rgba(0, 200, 83, 0.15);
+  }
+
+  .srch {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    padding-right: 16px;
+  }
+
+  #search {
+    width: 180px;
+  }
+
+  main {
+    padding: 30px 24px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h1 span {
+    font-size: 30px;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .sell-car-form {
+    padding: 28px;
+  }
+}
+
+/* ── Small tablets / large phones (max 800px) ── */
+@media (max-width: 800px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0;
+  }
+
+  nav h1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    padding: 14px 10px 8px;
+    font-size: 26px;
+  }
+
+  span {
+    font-size: 26px;
+  }
+
+  section.links {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 12px;
+    border-top: 1px solid rgba(0, 200, 83, 0.15);
+    border-bottom: 1px solid rgba(0, 200, 83, 0.15);
+  }
+
+  section.links a {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  .srch {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    padding: 10px 16px 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #search {
+    flex: 1;
+    width: auto;
+    max-width: 260px;
+    height: 38px;
+  }
+
+  .srchbtn {
+    height: 38px;
+    width: 90px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 20px 16px;
+  }
+
+  .hero {
+    padding: 30px 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h1 span {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    min-height: unset;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 26px;
+  }
+
+  .form-container h2 span {
+    font-size: 26px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .form-group.full-width {
+    grid-column: 1;
+  }
+
+  .sell-car-form {
+    padding: 20px 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  footer .contact-icons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  footer .social-icons {
+    gap: 20px;
+    padding: 16px;
+  }
+
+  footer .social-icons a {
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+/* ── Mobile phones (max 480px) ── */
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 22px;
+    padding: 12px 10px 6px;
+  }
+
+  span {
+    font-size: 22px;
+  }
+
+  section.links {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 0;
+    padding: 6px 10px;
+  }
+
+  section.links a {
+    font-size: 13px;
+    padding: 8px 4px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 200, 83, 0.08);
+  }
+
+  section.links a:nth-child(3),
+  section.links a:nth-child(4) {
+    border-bottom: none;
+  }
+
+  #search {
+    max-width: 200px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .srchbtn {
+    width: 78px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  main {
+    padding: 16px 12px;
+  }
+
+  .hero {
+    padding: 24px 12px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero h1 span {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .step-number {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    top: -12px;
+    right: 16px;
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .form-container h2 span {
+    font-size: 22px;
+  }
+
+  .sell-car-form {
+    padding: 16px 12px;
+  }
+
+  .form-section h3 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    font-size: 13px;
+    padding: 11px 16px;
+  }
+
+  footer .contact-icons p {
+    font-size: 13px;
+  }
+
+  footer .social-icons a {
+    font-size: 18px;
+  }
+}
+
+/* ── Very small phones (max 360px) ── */
+@media (max-width: 360px) {
+  nav h1 {
+    font-size: 20px;
+  }
+
+  section.links a {
+    font-size: 12px;
+  }
+
+  #search {
+    max-width: 160px;
+    font-size: 12px;
+  }
+
+  .srchbtn {
+    width: 68px;
+    font-size: 12px;
+  }
+
+  .hero h1,
+  .hero h1 span {
+    font-size: 20px;
+  }
+
+  .form-container h2,
+  .form-container h2 span {
+    font-size: 20px;
+  }
+
+  .sell-car-form {
+    padding: 14px 10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 12px;
+  }
+}
